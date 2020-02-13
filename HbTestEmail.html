@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <div style = "font-size: 16px;">
+    <p>Hi <?= mailData[0].split(' ')[0] ?>,</p>
+    
+    <p>Thanks for showing great interest for the position of Teaching Assistant Intern at Coding Blocks. The detailed schedule of the first-round i.e. an <span style="font-weight: bold;">online test</span> is mentioned below </p>
+    <br>
+    <p>Date: <span style="font-weight: bold;"><?= mailData[1].toDateString() ?></span><p>
+    <? Logger.log(mailData[2].toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', hour12: true})) ?>
+    <p>Time: <span style="font-weight: bold;"><?= mailData[2].toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit', hour12: true}).split(" ").slice(0,2).join(" ") ?></span><p>
+    <p>Venue: <span style="font-weight: bold;">Your Place</span><p>
+    <p>Duration: <span style="font-weight: bold;"><?= mailData[3] ?> hour</span><p>
+    <br>
+    <p>Link to the online test: <a href= https://<?= mailData[4]?>> https://<?= mailData[4] ?></a>.</p>
+    <p>This will be <?= mailData[5]?> based test. For practice head over to <span style="font-weight: bold;"><a href= https://cb.lk/tamail>Hacker Blocks</a></span> and level up.</p>
+
+    <p>If you have any query regarding the selection procedure, feel free to ask at <span style="font-weight: bold;">ta@codingblocks.com</span>.<p>
+    <br>
+    <br>
+    <p style="font-weight: bold;"> Thanks & Regards</p>
+    <p> Team Coding Blocks</p>
+    
+    <img src='https://minio-i.codingblocks.com/img/CodingBlocksThumbnail.png' border='0' alt='error' width='230' height='81' align='middle'>
+    </div>
+  </body>
+</html>
+
+

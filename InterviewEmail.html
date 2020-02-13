@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+<body>
+    <div style = "font-size: 16px; line-height: 1.2;">
+    <p>Hi <?= mailData[0].split(' ')[0] ?>,</p>
+    
+    <p>Congratulations you are selected for the interview round of Teaching Assistant Internship at Coding Blocks.
+    <br>
+    <br>
+    There will be a <?= mailData[3]?> based interview taken by our team, scheduled on <span style="font-weight: bold;"><?= mailData[1].toDateString() ?></span> at <span style="font-weight: bold;"><?= mailData[2].toLocaleTimeString().split(" ").slice(0,2).join(" ") ?></span>.<p>
+   <br>
+    <div style = "line-height: 1;">What can you do to make it a success? Well, practice makes a human perfect so here is how you can practice more:
+      <p>a. Head over to <a href= https://cb.lk/tamail>Hacker Blocks</a> and level up.</p>
+      <p>b. Prepare for the interview by making your concepts more clear <a href= https://cb.lk/tayt>here</a>.</p>
+     </div>
+
+    <p style="font-weight: bold;">Kindly acknowledge this mail and confirm your availability to conduct a telephonic interview by responding to this mail. </p>
+    <br>
+    <p>If you have any query regarding the Teaching Assistant Internship, feel free to ask at <span style="font-weight: bold;">ta@codingblocks.com</span>.<p>
+    <br>
+    <br>
+    <p style="font-weight: bold;"> Thanks & Regards</p>
+    <p> Team Coding Blocks</p>
+    
+    <img src='https://minio-i.codingblocks.com/img/CodingBlocksThumbnail.png' border='0' alt='error' width='230' height='81' align='middle'>
+    </div>
+  </body>
+</html>
+
+
